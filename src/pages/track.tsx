@@ -1,4 +1,6 @@
 import type { ReactNode } from 'react';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import Layout from '@theme/Layout';
 
 export default function Track(): ReactNode {
@@ -6,7 +8,7 @@ export default function Track(): ReactNode {
         <Layout title="Track" description="Track">
             <main style={{ padding: 0 }}>
                 <img
-                    src="/img/track.jpg"
+                    src={useBaseUrl("/img/track.jpg")}
                     alt="Track"
                     style={{ width: '100%', height: 'auto', display: 'block' }}
                 />
