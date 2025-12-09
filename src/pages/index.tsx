@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import Layout from '@theme/Layout';
 import styles from './index.module.css';
 
@@ -12,7 +13,7 @@ export default function Home(): ReactNode {
 
       {/* Header With Overlay */}
       <div className={styles.bannerContainer}>
-        <img src="/img/header-banner.png" alt="Header Banner" className={styles.headerImage} />
+        <img src={useBaseUrl("/img/header-banner.png")} alt="Header Banner" className={styles.headerImage} />
         <div className={styles.headerOverlay}>
           <div className={styles.container}>
             <h1 className={styles.name}>Madan Sudarman</h1>
@@ -31,11 +32,11 @@ export default function Home(): ReactNode {
 
         {/* Certification Logos */}
         <div className={styles.logoRow}>
-          <img src="/img/azure.png" alt="Azure AI Engineer" className={styles.certLogo} />
-          <img src="/img/copilot.png" alt="GitHub Copilot" className={styles.certLogo} />
-          <img src="/img/certprof.png" alt="CertProf" className={styles.certLogo} />
-          <img src="/img/finops.png" alt="FinOps Certified" className={styles.certLogo} />
-          <img src="/img/mct.png" alt="MCT" className={styles.certLogo} />
+          <img src={useBaseUrl("/img/azure.png")} alt="Azure AI Engineer" className={styles.certLogo} />
+          <img src={useBaseUrl("/img/copilot.png")} alt="GitHub Copilot" className={styles.certLogo} />
+          <img src={useBaseUrl("/img/certprof.png")} alt="CertProf" className={styles.certLogo} />
+          <img src={useBaseUrl("/img/finops.png")} alt="FinOps Certified" className={styles.certLogo} />
+          <img src={useBaseUrl("/img/mct.png")} alt="MCT" className={styles.certLogo} />
         </div>
 
         {/* Experience Bar */}
@@ -114,7 +115,7 @@ export default function Home(): ReactNode {
 
       {/* Footer With Overlay */}
       <div className={styles.bannerContainer}>
-        <img src="/img/banner.png" alt="Footer Banner" className={styles.footerImage} />
+        <img src={useBaseUrl("/img/banner.png")} alt="Footer Banner" className={styles.footerImage} />
         <div className={styles.footerOverlay}>
           <div className={styles.container}>
             <div className={styles.contactInfo}>
